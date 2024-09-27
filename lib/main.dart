@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 void main()
 {
@@ -10,6 +11,34 @@ class Patient extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.purpleAccent,
+          title: Text("Patients App"),
+        ),
+        body: Container(
+          child: Column(
+            children: [
+              Text("Patient name"),
+              TextField(),
+              Text("Mobile no"),
+              TextField(),
+              Text("Email Id"),
+              TextField(),
+              Text("Address"),
+              TextField(),
+              Text("PIN CODE"),
+              TextField(),
+              ElevatedButton(onPressed: (){}
+                  
+                  , child: Text("SUBMIT"))
+              
+              
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
